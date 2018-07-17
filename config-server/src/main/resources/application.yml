@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+         #password: _18041001!!!
+          #username: gmf45
+          #uri: https://gitee.com/gmf45/eureka
+          #password: _18041001!!!
+          username: gaomingfeng
+          uri: https://github.com/gaomingfeng/springcloud
+          basedir: /Users/projects/config-storage
+          password: 1qaz2wsx
+  rabbitmq:
+    host: 192.168.150.112
+    port: 5672
+    password: guest
+    username: guest
+eureka:
+  client:
+    service-url:
+        defaultZone: http://localhost:9000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
+
+
