@@ -11,8 +11,8 @@ spring:
       server:
         git:
           basedir: /Users/projects/config-storage
-          password: 1qaz2wsx
-          username: gaomingfeng
+          password: 
+          username: 
           uri: https://github.com/gaomingfeng/springcloud
           force-pull: true
 eureka:
