@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        service-id: CONFIG-SERVER
+        enabled: true
+      profile: dev
+  application:
+    name: feginClient
+  rabbitmq:
+      host: 192.168.150.112
+      port: 5672
+      password: guest
+      username: guest
+eureka:
+  client:
+    service-url:
+        defaultZone: http://localhost:9000/eureka/
+server:
+  port: 7000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
